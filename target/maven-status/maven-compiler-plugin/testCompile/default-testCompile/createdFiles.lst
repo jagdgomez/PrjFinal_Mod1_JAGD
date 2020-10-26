@@ -1,5 +1,7 @@
-Tests\baseTest.class
 PageObjects\loginPage.class
 PageObjects\basePage.class
+PageObjects\registerPage.class
+Tests\baseTest.class
 PageObjects\dashboardPage.class
 Tests\loginTest.class
+Tests\registerTest.class
