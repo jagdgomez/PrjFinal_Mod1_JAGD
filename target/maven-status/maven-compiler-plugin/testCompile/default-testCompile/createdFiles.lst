@@ -3,5 +3,6 @@ PageObjects\basePage.class
 PageObjects\registerPage.class
 Tests\baseTest.class
 PageObjects\dashboardPage.class
+PageObjects\registryConfirmPage.class
 Tests\loginTest.class
 Tests\registerTest.class
