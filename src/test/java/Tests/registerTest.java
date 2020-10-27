@@ -1,6 +1,8 @@
 package Tests;
 
 import PageObjects.registerPage;
+import PageObjects.registryConfirmPage;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class registerTest extends baseTest {
@@ -14,11 +16,11 @@ public class registerTest extends baseTest {
 
     public void doRegister() throws InterruptedException {
         registerPage register = new registerPage(driver, getBaseUrl());
+        registryConfirmPage RegisterConfirm = new registryConfirmPage(driver);
         register.goToPage();
-        register.doRegister("Johnny","Gómez","jgtest1@test.com",
+        register.doRegister("Johnny","Gómez","jgtest3@test.com",
                 "70110555","Test#123","Test#123");
-        Thread.sleep(10000);
-        //pending create asserts Your accounts was succesfully created!!!
-
+        //   System.out.println("Container results: "+RegisterConfirm.SetRegistryCreatedContainer().getText());
+        Assert.assertEquals(RegisterConfirm.SetRegistryCreatedContainer().getText(),"Your Account Has Been Created!");
     }
 }

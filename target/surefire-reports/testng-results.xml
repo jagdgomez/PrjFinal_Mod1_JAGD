@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="35066" started-at="2020-10-26T01:08:31 CST" finished-at="2020-10-26T01:09:06 CST">
+  <suite name="Command line suite" duration-ms="32602" started-at="2020-10-26T20:28:29 CST" finished-at="2020-10-26T20:29:01 CST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="35066" started-at="2020-10-26T01:08:31 CST" finished-at="2020-10-26T01:09:06 CST">
+    <test name="Command line test" duration-ms="32602" started-at="2020-10-26T20:28:29 CST" finished-at="2020-10-26T20:29:01 CST">
       <class name="Tests.loginTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.loginTest@5700d6b1]" name="setUpTest" is-config="true" duration-ms="5052" started-at="2020-10-26T01:08:31 CST" finished-at="2020-10-26T01:08:36 CST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.loginTest@5700d6b1]" name="setUpTest" is-config="true" duration-ms="4954" started-at="2020-10-26T20:28:29 CST" finished-at="2020-10-26T20:28:34 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="doLogin()[pri:0, instance:Tests.loginTest@5700d6b1]" name="doLogin" duration-ms="7752" started-at="2020-10-26T01:08:36 CST" finished-at="2020-10-26T01:08:44 CST">
+        <test-method status="PASS" signature="doLogin()[pri:0, instance:Tests.loginTest@5700d6b1]" name="doLogin" duration-ms="8051" started-at="2020-10-26T20:28:34 CST" finished-at="2020-10-26T20:28:42 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.loginTest@5700d6b1]" name="tearDown" is-config="true" duration-ms="1162" started-at="2020-10-26T01:08:44 CST" finished-at="2020-10-26T01:08:45 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.loginTest@5700d6b1]" name="tearDown" is-config="true" duration-ms="762" started-at="2020-10-26T20:28:42 CST" finished-at="2020-10-26T20:28:43 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.loginTest -->
       <class name="Tests.registerTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.registerTest@6fd02e5]" name="setUpTest" is-config="true" duration-ms="3518" started-at="2020-10-26T01:08:45 CST" finished-at="2020-10-26T01:08:49 CST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.registerTest@6fd02e5]" name="setUpTest" is-config="true" duration-ms="3471" started-at="2020-10-26T20:28:43 CST" finished-at="2020-10-26T20:28:46 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="doRegister()[pri:0, instance:Tests.registerTest@6fd02e5]" name="doRegister" duration-ms="16177" started-at="2020-10-26T01:08:49 CST" finished-at="2020-10-26T01:09:05 CST">
+        <test-method status="PASS" signature="doRegister()[pri:0, instance:Tests.registerTest@6fd02e5]" name="doRegister" duration-ms="14163" started-at="2020-10-26T20:28:46 CST" finished-at="2020-10-26T20:29:00 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegister -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.registerTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="1351" started-at="2020-10-26T01:09:05 CST" finished-at="2020-10-26T01:09:06 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.registerTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="1137" started-at="2020-10-26T20:29:00 CST" finished-at="2020-10-26T20:29:01 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
