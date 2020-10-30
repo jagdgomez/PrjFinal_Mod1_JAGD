@@ -5,8 +5,6 @@ import PageObjects.loginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import static utilities.emailGenerator.RandomString;
-
 
 public class loginTest extends baseTest{
 
