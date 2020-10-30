@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="32602" started-at="2020-10-26T20:28:29 CST" finished-at="2020-10-26T20:29:01 CST">
+  <suite name="Command line suite" duration-ms="9365" started-at="2020-10-30T14:53:18 CST" finished-at="2020-10-30T14:53:27 CST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="32602" started-at="2020-10-26T20:28:29 CST" finished-at="2020-10-26T20:29:01 CST">
-      <class name="Tests.loginTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.loginTest@5700d6b1]" name="setUpTest" is-config="true" duration-ms="4954" started-at="2020-10-26T20:28:29 CST" finished-at="2020-10-26T20:28:34 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="doLogin()[pri:0, instance:Tests.loginTest@5700d6b1]" name="doLogin" duration-ms="8051" started-at="2020-10-26T20:28:34 CST" finished-at="2020-10-26T20:28:42 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.loginTest@5700d6b1]" name="tearDown" is-config="true" duration-ms="762" started-at="2020-10-26T20:28:42 CST" finished-at="2020-10-26T20:28:43 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.loginTest -->
+    <test name="Command line test" duration-ms="9365" started-at="2020-10-30T14:53:18 CST" finished-at="2020-10-30T14:53:27 CST">
       <class name="Tests.registerTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.registerTest@6fd02e5]" name="setUpTest" is-config="true" duration-ms="3471" started-at="2020-10-26T20:28:43 CST" finished-at="2020-10-26T20:28:46 CST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.registerTest@5700d6b1]" name="setUpTest" is-config="true" duration-ms="4982" started-at="2020-10-30T14:53:18 CST" finished-at="2020-10-30T14:53:23 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="doRegister()[pri:0, instance:Tests.registerTest@6fd02e5]" name="doRegister" duration-ms="14163" started-at="2020-10-26T20:28:46 CST" finished-at="2020-10-26T20:29:00 CST">
+        <test-method status="PASS" signature="doRegister()[pri:0, instance:Tests.registerTest@5700d6b1]" name="doRegister" duration-ms="3386" started-at="2020-10-30T14:53:23 CST" finished-at="2020-10-30T14:53:26 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doRegister -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.registerTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="1137" started-at="2020-10-26T20:29:00 CST" finished-at="2020-10-26T20:29:01 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.registerTest@5700d6b1]" name="tearDown" is-config="true" duration-ms="944" started-at="2020-10-30T14:53:26 CST" finished-at="2020-10-30T14:53:27 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

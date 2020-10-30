@@ -5,6 +5,9 @@ import PageObjects.loginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static utilities.emailGenerator.RandomString;
+
+
 public class loginTest extends baseTest{
 
     //select browser
@@ -12,14 +15,13 @@ public class loginTest extends baseTest{
         super ("chrome");
     }
 
-    @Test
+   // @Test
 
 
     public void doLogin() throws InterruptedException {
 
         loginPage login = new loginPage(driver, getBaseUrl());
         dashboardPage dashboard = new dashboardPage(driver);
-
         login.goToPage();
         login.doLogin("alexgf08@gmail.com","Test123");
 
@@ -28,6 +30,8 @@ public class loginTest extends baseTest{
         Thread.sleep(5000);
 
     }
+
+
 
 }
 
