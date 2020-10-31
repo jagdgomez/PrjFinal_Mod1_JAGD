@@ -14,7 +14,7 @@ public class registerTest extends baseTest {
     }
 
 
-    @Test
+   // @Test
 
     public void doRegister() throws InterruptedException {
         registerPage register = new registerPage(driver, getBaseUrl());
