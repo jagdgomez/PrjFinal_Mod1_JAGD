@@ -6,3 +6,4 @@ PageObjects\dashboardPage.class
 PageObjects\registryConfirmPage.class
 Tests\loginTest.class
 Tests\registerTest.class
+utilities\emailGenerator.class
