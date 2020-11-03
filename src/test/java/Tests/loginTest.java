@@ -12,7 +12,7 @@ public class loginTest extends baseTest{
         super ("chrome");
     }
 
-    @Test
+   // @Test
 
 
     public void doLogin() throws InterruptedException {

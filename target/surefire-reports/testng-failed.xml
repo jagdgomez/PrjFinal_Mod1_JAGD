@@ -3,13 +3,13 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="Tests.registerTest">
+      <class name="Tests.CartTest">
         <methods>
+          <include name="addItemToCartAsAnonymous"/>
           <include name="setUpTest"/>
-          <include name="doRegister"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- Tests.registerTest -->
+      </class> <!-- Tests.CartTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
