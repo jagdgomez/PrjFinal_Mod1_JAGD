@@ -26,15 +26,15 @@ public class itemCatalogPage extends basePage {
         return driver.findElement(this.ItemAddedToCartContainer);
     }
 
-    public WebElement SetGoToCardButton() {
+    public WebElement SetGoToCartButton() {
         return driver.findElement(this.GoToCartButton);
     }
     public void addItemToCartFrmCatalog () {
         this.SetItemCatalogAddToCardButton().click();
     }
 
-    public void GoToCard(){
-        this.SetGoToCardButton().click();
+    public void GoToCart(){
+        this.SetGoToCartButton().click();
     }
 
 }
