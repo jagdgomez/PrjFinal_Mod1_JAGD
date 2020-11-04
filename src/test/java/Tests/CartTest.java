@@ -13,7 +13,8 @@ public class CartTest extends baseTest {
         super("chrome");
     }
 
-    @Test
+    @Test (groups = {"Regression"},description = "User could not purchase out of stock items")
+
     public void addItemToCartAsAnonymous() throws InterruptedException {
         landingPage landingPg = new landingPage(driver, getBaseUrl());
         searchResultsPage searchResults = new searchResultsPage(driver);

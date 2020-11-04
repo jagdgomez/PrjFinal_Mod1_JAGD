@@ -21,7 +21,7 @@ public class baseTest {
         return "https://demo.opencart.com/";
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setUpTest() {
         // Can be used in @BeforeSuite.
         chromeOptions = new ChromeOptions();
@@ -36,7 +36,7 @@ public class baseTest {
         this.SetWebDriverConfiguration(browser, chromeOptions);
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDown() {
         driver.quit();
     }

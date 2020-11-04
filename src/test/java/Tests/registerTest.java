@@ -14,7 +14,7 @@ public class registerTest extends baseTest {
     }
 
 
-   // @Test
+    @Test (groups = {"Functional"}, description ="Register New User")
 
     public void doRegister() throws InterruptedException {
         registerPage register = new registerPage(driver, getBaseUrl());

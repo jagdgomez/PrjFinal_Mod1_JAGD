@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="RegisterTestSuite">
+        <groups>
+            <run>
+                <include name="Functional"/>
+            </run>
+        </groups>
+    <test name="New users are able to Register" >
+        <classes>
+            <class name="Tests.registerTest"></class>
+        </classes>
+    </test>
+</suite>
