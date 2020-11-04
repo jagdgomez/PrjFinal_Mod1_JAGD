@@ -4,6 +4,7 @@ PageObjects\itemCatalogPage.class
 PageObjects\registerPage.class
 Tests\baseTest.class
 PageObjects\dashboardPage.class
+PageObjects\CartPage.class
 PageObjects\registryConfirmPage.class
 Tests\registerTest.class
 Tests\loginTest.class

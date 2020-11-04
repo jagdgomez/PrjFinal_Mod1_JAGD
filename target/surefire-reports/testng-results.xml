@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="31241" started-at="2020-11-03T00:46:29 CST" finished-at="2020-11-03T00:47:01 CST">
+  <suite name="Command line suite" duration-ms="11988" started-at="2020-11-03T22:15:38 CST" finished-at="2020-11-03T22:15:50 CST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="31241" started-at="2020-11-03T00:46:29 CST" finished-at="2020-11-03T00:47:01 CST">
+    <test name="Command line test" duration-ms="11988" started-at="2020-11-03T22:15:38 CST" finished-at="2020-11-03T22:15:50 CST">
       <class name="Tests.CartTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.CartTest@6fd02e5]" name="setUpTest" is-config="true" duration-ms="4904" started-at="2020-11-03T00:46:29 CST" finished-at="2020-11-03T00:46:34 CST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.CartTest@6fd02e5]" name="setUpTest" is-config="true" duration-ms="4565" started-at="2020-11-03T22:15:38 CST" finished-at="2020-11-03T22:15:43 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="addItemToCartAsAnonymous()[pri:0, instance:Tests.CartTest@6fd02e5]" name="addItemToCartAsAnonymous" duration-ms="25494" started-at="2020-11-03T00:46:34 CST" finished-at="2020-11-03T00:47:00 CST">
+        <test-method status="PASS" signature="addItemToCartAsAnonymous()[pri:0, instance:Tests.CartTest@6fd02e5]" name="addItemToCartAsAnonymous" duration-ms="6615" started-at="2020-11-03T22:15:43 CST" finished-at="2020-11-03T22:15:49 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartAsAnonymous -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.CartTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="773" started-at="2020-11-03T00:47:00 CST" finished-at="2020-11-03T00:47:01 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.CartTest@6fd02e5]" name="tearDown" is-config="true" duration-ms="751" started-at="2020-11-03T22:15:49 CST" finished-at="2020-11-03T22:15:50 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

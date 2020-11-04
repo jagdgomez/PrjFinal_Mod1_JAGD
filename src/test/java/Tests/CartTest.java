@@ -1,5 +1,6 @@
 package Tests;
 
+import PageObjects.CartPage;
 import PageObjects.itemCatalogPage;
 import PageObjects.landingPage;
 import PageObjects.searchResultsPage;
@@ -18,6 +19,7 @@ public class CartTest extends baseTest {
         searchResultsPage searchResults = new searchResultsPage(driver);
         itemCatalogPage CatalogPage = new itemCatalogPage (driver);
         waits wait = new waits(driver);
+        CartPage CartPg = new CartPage(driver);
         String Prod_Name;
         Prod_Name="MacBook";
         landingPg.goToPage();
@@ -42,17 +44,20 @@ public class CartTest extends baseTest {
         if (!(CatalogPage.SetItemAddedToCartContainer().isDisplayed())) {
             Assert.fail("Item not included in Cart");
         }
-        Thread.sleep(10000);
-        CatalogPage.GoToCard();
-        Thread.sleep(10000);
-
-
-
-
-
-        //searchResults.addProductToCart();
-        //wait.waitForJSandJQueryToLoad();
-        //Assert.assertEquals(searchResults.SetSuccessModal().isDisplayed(), true);
+       CatalogPage.GoToCart();
+        Assert.assertEquals(CartPg.SetCartContainer().isDisplayed(),true);
+        if (!(CartPg.SetCartContainer().isDisplayed())) {
+            Assert.fail("Cart Page not displayed");
+        }
+        System.out.println("Cart Page Displayed");
+        Assert.assertEquals(CartPg.SetProdNameTbContainer(Prod_Name).isDisplayed(),true);
+        System.out.println("Validated Product in List: " + Prod_Name);
+        CartPg.DoCheckOut();
+        wait.waitForJSandJQueryToLoad();
+        Assert.assertEquals(CartPg.SetFailureModal().isDisplayed(),true);
+        if (CartPg.SetFailureModal().isDisplayed()) {
+            System.out.println("Expected: Could Not Check Out Item: " + Prod_Name );
+        }
     }
 
 }
