@@ -31,7 +31,7 @@ public class baseTest {
         //chromeOptions.addArguments("--start-maximized");
         //chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--window-size=800,600");
-        //chromeOptions.addArguments("--incognito");
+        // chromeOptions.addArguments("--incognito");
         //chromeOptions.addArguments("--screenshot");
         this.SetWebDriverConfiguration(browser, chromeOptions);
     }

@@ -8,9 +8,9 @@
         </groups>
  <test name="User Could not Purchase out of Stock Items" >
     <classes>
-            <class name="Tests.CartTest">
+            <class name="Tests.cartTest">
                 <methods>
-                    <include name="addItemToCartAsAnonymous"></include>
+                    <include name="addItemToCartAsAnonymous"/>
                 </methods>
             </class>
         </classes>

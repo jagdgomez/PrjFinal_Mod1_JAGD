@@ -19,6 +19,7 @@ public class landingPage extends basePage {
 
     public void doSearch (String productName) {
         getSearchTextbox().sendKeys(productName);
+        System.out.println("Searching= "+productName);
         getSearchTextbox().sendKeys(Keys.ENTER);
     }
 }

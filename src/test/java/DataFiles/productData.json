@@ -1,10 +1,16 @@
 {
   "dataset" : [
     {
-      "name" : "MacBook"
+      "name" : "MacBook",
+      "EuroPrice": "518.16€",
+      "DollarPrice":"$602.00",
+      "PoundSterlingPrice":"£454.10"
     },
     {
-      "name" : "iPhone"
+      "name" : "iPhone",
+      "EuroPrice": "106.04€",
+      "DollarPrice":"$123.20",
+      "PoundSterlingPrice":"£92.93"
     }
   ]
 }

@@ -8,7 +8,7 @@
         </groups>
     <test name="New users are able to Register" >
         <classes>
-            <class name="Tests.registerTest"></class>
+            <class name="Tests.registerTest"/>
         </classes>
     </test>
 </suite>

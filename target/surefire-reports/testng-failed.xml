@@ -3,13 +3,20 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="Tests.CartTest">
+      <class name="Tests.currencyTest">
         <methods>
-          <include name="addItemToCartAsAnonymous"/>
           <include name="setUpTest"/>
           <include name="tearDown"/>
+          <include name="currencyValidation" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- Tests.CartTest -->
+      </class> <!-- Tests.currencyTest -->
+      <class name="Tests.cartTest">
+        <methods>
+          <include name="setUpTest"/>
+          <include name="addItemToCartAsAnonymous" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Tests.cartTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->
