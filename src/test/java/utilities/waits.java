@@ -26,7 +26,7 @@ public class waits {
 
         // wait for jQuery to load
         ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
-          // @Override
+            @Override
             public Boolean apply(WebDriver driver) {
                 try {
                     return ((Long)((JavascriptExecutor)driver).executeScript("return jQuery.active") == 0);
@@ -40,7 +40,7 @@ public class waits {
 
         // wait for Javascript to load
         ExpectedCondition<Boolean> jsLoad = new ExpectedCondition<Boolean>() {
-          //  @Override
+            @Override
             public Boolean apply(WebDriver driver) {
                 return ((JavascriptExecutor)driver).executeScript("return document.readyState")
                         .toString().equals("complete");
