@@ -1,38 +1,39 @@
 package Tests;
 
+import DataProviders.productsDataProvider;
 import PageObjects.CartPage;
 import PageObjects.itemCatalogPage;
 import PageObjects.landingPage;
 import PageObjects.searchResultsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pojo.productData;
 import utilities.waits;
 
-public class CartTest extends baseTest {
-    public CartTest() {
+public class cartTest extends baseTest {
+    public cartTest() {
         super("chrome");
     }
 
-    @Test
-    public void addItemToCartAsAnonymous() throws InterruptedException {
+    @Test (groups = {"Regression"},description = "User could not purchase out of stock items",dataProvider = "getProductsDataFromJson",dataProviderClass = productsDataProvider.class)
+
+    public void addItemToCartAsAnonymous(productData _productData) {
         landingPage landingPg = new landingPage(driver, getBaseUrl());
         searchResultsPage searchResults = new searchResultsPage(driver);
         itemCatalogPage CatalogPage = new itemCatalogPage (driver);
         waits wait = new waits(driver);
         CartPage CartPg = new CartPage(driver);
         String Prod_Name;
-        Prod_Name="MacBook";
+        Prod_Name=_productData.getName();
         landingPg.goToPage();
         landingPg.doSearch(Prod_Name);
         Assert.assertEquals(searchResults.SetProductTile().size() > 0,true);
-        System.out.println("Search Results" + searchResults.SetProductTile().size());
+        System.out.println("Search Results =" + searchResults.SetProductTile().size());
         if(!(searchResults.SetProductTile().size() > 0)) {
             Assert.fail("Empty list");
         }
-        //Thread.sleep(10000);
         searchResults.SelectItemToOpenCatalog();
-       //Thread.sleep(10000);
-        System.out.println("Asserts");
+        System.out.println("Validating Results");
          Assert.assertEquals (CatalogPage.SetItemCatalogContainer().getText(),Prod_Name);
         if (!(CatalogPage.SetItemCatalogContainer().getText().equals(Prod_Name))) {
             Assert.fail("No Item Selected");

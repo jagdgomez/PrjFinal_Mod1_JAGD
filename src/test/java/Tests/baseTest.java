@@ -21,7 +21,7 @@ public class baseTest {
         return "https://demo.opencart.com/";
     }
 
-    @BeforeMethod
+    @BeforeMethod (alwaysRun = true)
     public void setUpTest() {
         // Can be used in @BeforeSuite.
         chromeOptions = new ChromeOptions();
@@ -31,12 +31,12 @@ public class baseTest {
         //chromeOptions.addArguments("--start-maximized");
         //chromeOptions.addArguments("--headless");
         //chromeOptions.addArguments("--window-size=800,600");
-        //chromeOptions.addArguments("--incognito");
+        // chromeOptions.addArguments("--incognito");
         //chromeOptions.addArguments("--screenshot");
         this.SetWebDriverConfiguration(browser, chromeOptions);
     }
 
-    @AfterMethod
+    @AfterMethod (alwaysRun = true)
     public void tearDown() {
         driver.quit();
     }
