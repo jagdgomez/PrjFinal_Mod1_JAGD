@@ -15,6 +15,8 @@ public class itemCatalogPage extends basePage {
     private By CurrencyOptionEUR = By.xpath("//*[@class='currency-select btn btn-link btn-block'][@name='EUR']");
     private By CurrencyOptionGBP = By.xpath("//*[@class='currency-select btn btn-link btn-block'][@name='GBP']");
     private By CurrencyOptionUSD = By.xpath("//*[@class='currency-select btn btn-link btn-block'][@name='USD']");
+    private String PriceString;
+
     public itemCatalogPage (WebDriver driver) {
         super(driver);
     }
@@ -70,5 +72,10 @@ public class itemCatalogPage extends basePage {
     public void selectCurrencyUSD(){
         this.SetCurrencySelector().click();
         this.SetCurrencyOptionUSD().click();
+    }
+
+    public String SetProductPrice(String Prod_Price) {
+        PriceString = Prod_Price.replaceAll("[^\\.0123456789]","");
+        return this.PriceString;
     }
 }

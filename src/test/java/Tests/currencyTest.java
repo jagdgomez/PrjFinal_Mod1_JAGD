@@ -18,13 +18,14 @@ public class currencyTest extends baseTest {
 
     @Test(groups = {"Regression"}, description = "Use is able to select the Currency of item Price", dataProvider = "getProductsDataFromJson", dataProviderClass = productsDataProvider.class)
 
-    public void currencyValidation(productData _productData) throws InterruptedException {
+    public void currencyValidation(productData _productData) {
         landingPage landingPg = new landingPage(driver, getBaseUrl());
         searchResultsPage searchResults = new searchResultsPage(driver);
         itemCatalogPage CatalogPage = new itemCatalogPage(driver);
         waits wait = new waits(driver);
         String Prod_Name;
         Prod_Name=_productData.getName();
+
 
         landingPg.goToPage();
         landingPg.doSearch(Prod_Name);
@@ -43,23 +44,23 @@ public class currencyTest extends baseTest {
         }
         CatalogPage.selectCurrencyEUR();
         wait.waitForJSandJQueryToLoad();
-        System.out.println("EUR Obtained= " +CatalogPage.SetItemPriceContainer().getText()+ "  Expected=" + _productData.getEuroPrice());
-        Assert.assertEquals (CatalogPage.SetItemPriceContainer().getText(),_productData.getEuroPrice());
-        if (!(CatalogPage.SetItemPriceContainer().getText().equals(_productData.getEuroPrice()))) {
+        System.out.println("EUR Obtained=" +CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText())+"  Expected=" + _productData.getEuroPrice());
+        Assert.assertEquals (CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText()),_productData.getEuroPrice());
+        if (!(CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText()).equals(_productData.getEuroPrice()))) {
             Assert.fail("Wrong Price Displayed-EUR");
         }
         CatalogPage.selectCurrencyGBP();
         wait.waitForJSandJQueryToLoad();
-        System.out.println("GBP Obtained= " +CatalogPage.SetItemPriceContainer().getText()+ "  Expected=" + _productData.getPoundSterlingPrice());
-        Assert.assertEquals (CatalogPage.SetItemPriceContainer().getText(),_productData.getPoundSterlingPrice());
-        if (!(CatalogPage.SetItemPriceContainer().getText().equals(_productData.getPoundSterlingPrice()))) {
+        System.out.println("GBP Obtained=" +CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText())+ "  Expected=" + _productData.getPoundSterlingPrice());
+        Assert.assertEquals (CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText()),_productData.getPoundSterlingPrice());
+        if (!(CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText()).equals(_productData.getPoundSterlingPrice()))) {
             Assert.fail("Wrong Price Displayed-GBP");
         }
         CatalogPage.selectCurrencyUSD();
         wait.waitForJSandJQueryToLoad();
-        System.out.println("USD Obtained= " +CatalogPage.SetItemPriceContainer().getText()+ "  Expected=" + _productData.getDollarPrice());
-        Assert.assertEquals (CatalogPage.SetItemPriceContainer().getText(),_productData.getDollarPrice());
-        if (!(CatalogPage.SetItemPriceContainer().getText().equals(_productData.getDollarPrice()))) {
+        System.out.println("USD Obtained=" +CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText())+ "  Expected=" + _productData.getDollarPrice());
+        Assert.assertEquals (CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText()),_productData.getDollarPrice());
+        if (!(CatalogPage.SetProductPrice(CatalogPage.SetItemPriceContainer().getText()).equals(_productData.getDollarPrice()))) {
             Assert.fail("Wrong Price Displayed-USD");
             }
         }
