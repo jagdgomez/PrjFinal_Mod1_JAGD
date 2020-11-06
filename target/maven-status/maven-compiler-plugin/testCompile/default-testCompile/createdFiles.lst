@@ -5,7 +5,6 @@ Tests\cartTest.class
 Tests\currencyTest.class
 Tests\baseTest.class
 utilities\waits$1.class
-PageObjects\dashboardPage.class
 PageObjects\CartPage.class
 PageObjects\registryConfirmPage.class
 PageObjects\searchResultsPage.class
