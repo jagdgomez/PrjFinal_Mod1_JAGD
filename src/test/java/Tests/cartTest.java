@@ -5,19 +5,29 @@ import PageObjects.CartPage;
 import PageObjects.itemCatalogPage;
 import PageObjects.landingPage;
 import PageObjects.searchResultsPage;
+import io.qameta.allure.*;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pojo.productData;
 import utilities.waits;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+@Epic("Automation Project Johnny Gomez")
+@Story("Cart Test")
 public class cartTest extends baseTest {
     public cartTest() {
         super("chrome");
     }
 
     @Test (groups = {"Regression"},description = "User could not purchase out of stock items",dataProvider = "getProductsDataFromJson",dataProviderClass = productsDataProvider.class)
-
-    public void addItemToCartAsAnonymous(productData _productData) {
+    @Description ("Users are able to Search Product, View Product description page, add the product into Cart but could not purchase out of stock products")
+    @Severity(SeverityLevel.BLOCKER)
+    //@Attachment (value = "Screenshot", type = "image/png")
+    public void addItemToCartAsAnonymous(productData _productData) throws FileNotFoundException {
         landingPage landingPg = new landingPage(driver, getBaseUrl());
         searchResultsPage searchResults = new searchResultsPage(driver);
         itemCatalogPage CatalogPage = new itemCatalogPage (driver);
@@ -55,6 +65,8 @@ public class cartTest extends baseTest {
         System.out.println("Validated Product in List: " + Prod_Name);
         CartPg.DoCheckOut();
         wait.waitForJSandJQueryToLoad();
+
+        Allure.addAttachment("image", new FileInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE)));
         Assert.assertEquals(CartPg.SetFailureModal().isDisplayed(),true);
         if (CartPg.SetFailureModal().isDisplayed()) {
             System.out.println("Expected: Could Not Check Out Item: " + Prod_Name );

@@ -1,5 +1,6 @@
 package PageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
 public class basePage {
@@ -18,7 +19,6 @@ public class basePage {
     }
 
     //execute go to page
-
     public void goToPage() {
         this.driver.get(this.url);
     }

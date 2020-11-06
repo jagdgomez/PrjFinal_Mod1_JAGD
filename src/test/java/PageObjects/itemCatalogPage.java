@@ -1,5 +1,6 @@
 package PageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -53,22 +54,26 @@ public class itemCatalogPage extends basePage {
     }
 
 
+    @Step ("Click on Add To Card Button")
     public void addItemToCartFrmCatalog () {
         this.SetItemCatalogAddToCardButton().click();
     }
-
+    @Step("Click Shopping Cart menu option")
     public void GoToCart(){
         this.SetGoToCartButton().click();
     }
 
+    @Step("Select Euro as Currency")
     public void selectCurrencyEUR(){
         this.SetCurrencySelector().click();
         this.SetCurrencyOptionEUR().click();
     }
+    @Step("Select Pound Sterling as Currency")
     public void selectCurrencyGBP(){
         this.SetCurrencySelector().click();
         this.SetCurrencyOptionGBP().click();
     }
+    @Step("Select US Dollar as Currency")
     public void selectCurrencyUSD(){
         this.SetCurrencySelector().click();
         this.SetCurrencyOptionUSD().click();

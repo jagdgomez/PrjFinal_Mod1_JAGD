@@ -1,5 +1,6 @@
 package PageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -34,6 +35,7 @@ public class searchResultsPage extends basePage{
         this.SetAddToCartButton().click();
     }
 
+    @Step("Click on Item to open Item Description Page")
     public void SelectItemToOpenCatalog(){
         this.SetSelectItemCatalog().click();
 

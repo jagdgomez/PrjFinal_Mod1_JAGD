@@ -1,5 +1,6 @@
 package PageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,7 +32,7 @@ public class CartPage extends basePage {
     public WebElement SetFailureModal() {
         return driver.findElement(this.failureModal);
     }
-
+    @Step("Click on CheckOut button")
     public void DoCheckOut() {
     this.SetCheckOutButton().click();
     }

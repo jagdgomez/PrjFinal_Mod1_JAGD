@@ -2,125 +2,125 @@
 <testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="RegisterTestSuite" duration-ms="7596" started-at="2020-11-05T14:39:48 CST" finished-at="2020-11-05T14:39:56 CST">
-    <groups>
-      <group name="Functional">
-        <method signature="registerTest.doRegister()[pri:0, instance:Tests.registerTest@74e47444]" name="doRegister" class="Tests.registerTest"/>
-      </group> <!-- Functional -->
-    </groups>
-    <test name="New users are able to Register" duration-ms="7596" started-at="2020-11-05T14:39:48 CST" finished-at="2020-11-05T14:39:56 CST">
-      <class name="Tests.registerTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.registerTest@74e47444]" name="setUpTest" is-config="true" duration-ms="3262" started-at="2020-11-05T14:39:48 CST" finished-at="2020-11-05T14:39:52 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="doRegister()[pri:0, instance:Tests.registerTest@74e47444]" name="doRegister" duration-ms="3596" started-at="2020-11-05T14:39:52 CST" description="Register New User" finished-at="2020-11-05T14:39:55 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doRegister -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.registerTest@74e47444]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-11-05T14:39:55 CST" finished-at="2020-11-05T14:39:56 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.registerTest -->
-    </test> <!-- New users are able to Register -->
-  </suite> <!-- RegisterTestSuite -->
-  <suite name="CurrencyTestSuite" duration-ms="28891" started-at="2020-11-05T14:39:56 CST" finished-at="2020-11-05T14:40:25 CST">
+  <suite name="Cart Test Suite" duration-ms="27373" started-at="2020-11-05T21:37:11 CST" finished-at="2020-11-05T21:37:39 CST">
     <groups>
       <group name="Regression">
-        <method signature="currencyTest.currencyValidation(pojo.productData)[pri:0, instance:Tests.currencyTest@1991f767]" name="currencyValidation" class="Tests.currencyTest"/>
+        <method signature="cartTest.addItemToCartAsAnonymous(pojo.productData)[pri:0, instance:Tests.cartTest@5b6813df]" name="addItemToCartAsAnonymous" class="Tests.cartTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Use is able to select the Currency of item Price" duration-ms="28891" started-at="2020-11-05T14:39:56 CST" finished-at="2020-11-05T14:40:25 CST">
-      <class name="Tests.currencyTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.currencyTest@1991f767]" name="setUpTest" is-config="true" duration-ms="3308" started-at="2020-11-05T14:39:56 CST" finished-at="2020-11-05T14:39:59 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="currencyValidation(pojo.productData)[pri:0, instance:Tests.currencyTest@1991f767]" name="currencyValidation" duration-ms="9822" started-at="2020-11-05T14:39:59 CST" description="Use is able to select the Currency of item Price" data-provider="getProductsDataFromJson" finished-at="2020-11-05T14:40:09 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pojo.productData@32da97fd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- currencyValidation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.currencyTest@1991f767]" name="tearDown" is-config="true" duration-ms="1428" started-at="2020-11-05T14:40:09 CST" finished-at="2020-11-05T14:40:10 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.currencyTest@1991f767]" name="setUpTest" is-config="true" duration-ms="3288" started-at="2020-11-05T14:40:10 CST" finished-at="2020-11-05T14:40:14 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="currencyValidation(pojo.productData)[pri:0, instance:Tests.currencyTest@1991f767]" name="currencyValidation" duration-ms="9744" started-at="2020-11-05T14:40:14 CST" description="Use is able to select the Currency of item Price" data-provider="getProductsDataFromJson" finished-at="2020-11-05T14:40:24 CST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[pojo.productData@994544]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- currencyValidation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.currencyTest@1991f767]" name="tearDown" is-config="true" duration-ms="1274" started-at="2020-11-05T14:40:24 CST" finished-at="2020-11-05T14:40:25 CST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Tests.currencyTest -->
-    </test> <!-- Use is able to select the Currency of item Price -->
-  </suite> <!-- CurrencyTestSuite -->
-  <suite name="CartTestSuite" duration-ms="27051" started-at="2020-11-05T14:39:21 CST" finished-at="2020-11-05T14:39:48 CST">
-    <groups>
-      <group name="Regression">
-        <method signature="cartTest.addItemToCartAsAnonymous(pojo.productData)[pri:0, instance:Tests.cartTest@83298d7]" name="addItemToCartAsAnonymous" class="Tests.cartTest"/>
-      </group> <!-- Regression -->
-    </groups>
-    <test name="User Could not Purchase out of Stock Items" duration-ms="27051" started-at="2020-11-05T14:39:21 CST" finished-at="2020-11-05T14:39:48 CST">
+    <test name="User Could not Purchase out of Stock Items" duration-ms="27373" started-at="2020-11-05T21:37:11 CST" finished-at="2020-11-05T21:37:39 CST">
       <class name="Tests.cartTest">
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.cartTest@83298d7]" name="setUpTest" is-config="true" duration-ms="6177" started-at="2020-11-05T14:39:21 CST" finished-at="2020-11-05T14:39:28 CST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.cartTest@5b6813df]" name="setUpTest" is-config="true" duration-ms="6051" started-at="2020-11-05T21:37:12 CST" description="Test Initialization" finished-at="2020-11-05T21:37:18 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="addItemToCartAsAnonymous(pojo.productData)[pri:0, instance:Tests.cartTest@83298d7]" name="addItemToCartAsAnonymous" duration-ms="7891" started-at="2020-11-05T14:39:28 CST" description="User could not purchase out of stock items" data-provider="getProductsDataFromJson" finished-at="2020-11-05T14:39:36 CST">
+        <test-method status="PASS" signature="addItemToCartAsAnonymous(pojo.productData)[pri:0, instance:Tests.cartTest@5b6813df]" name="addItemToCartAsAnonymous" duration-ms="7863" started-at="2020-11-05T21:37:18 CST" description="User could not purchase out of stock items" data-provider="getProductsDataFromJson" finished-at="2020-11-05T21:37:26 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pojo.productData@5b35c7d]]>
+                <![CDATA[pojo.productData@1f78d415]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartAsAnonymous -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.cartTest@83298d7]" name="tearDown" is-config="true" duration-ms="1398" started-at="2020-11-05T14:39:36 CST" finished-at="2020-11-05T14:39:37 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.cartTest@5b6813df]" name="tearDown" is-config="true" duration-ms="800" started-at="2020-11-05T21:37:26 CST" description="Closing Driver" finished-at="2020-11-05T21:37:27 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.cartTest@83298d7]" name="setUpTest" is-config="true" duration-ms="3279" started-at="2020-11-05T14:39:37 CST" finished-at="2020-11-05T14:39:40 CST">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.cartTest@5b6813df]" name="setUpTest" is-config="true" duration-ms="3423" started-at="2020-11-05T21:37:27 CST" description="Test Initialization" finished-at="2020-11-05T21:37:30 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpTest -->
-        <test-method status="PASS" signature="addItemToCartAsAnonymous(pojo.productData)[pri:0, instance:Tests.cartTest@83298d7]" name="addItemToCartAsAnonymous" duration-ms="7054" started-at="2020-11-05T14:39:40 CST" description="User could not purchase out of stock items" data-provider="getProductsDataFromJson" finished-at="2020-11-05T14:39:47 CST">
+        <test-method status="PASS" signature="addItemToCartAsAnonymous(pojo.productData)[pri:0, instance:Tests.cartTest@5b6813df]" name="addItemToCartAsAnonymous" duration-ms="7602" started-at="2020-11-05T21:37:30 CST" description="User could not purchase out of stock items" data-provider="getProductsDataFromJson" finished-at="2020-11-05T21:37:38 CST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[pojo.productData@22a6d75c]]>
+                <![CDATA[pojo.productData@1ad1c363]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addItemToCartAsAnonymous -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.cartTest@83298d7]" name="tearDown" is-config="true" duration-ms="687" started-at="2020-11-05T14:39:47 CST" finished-at="2020-11-05T14:39:48 CST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.cartTest@5b6813df]" name="tearDown" is-config="true" duration-ms="878" started-at="2020-11-05T21:37:38 CST" description="Closing Driver" finished-at="2020-11-05T21:37:39 CST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.cartTest -->
     </test> <!-- User Could not Purchase out of Stock Items -->
-  </suite> <!-- CartTestSuite -->
+  </suite> <!-- Cart Test Suite -->
+  <suite name="Register Test Suite" duration-ms="8992" started-at="2020-11-05T21:37:39 CST" finished-at="2020-11-05T21:37:48 CST">
+    <groups>
+      <group name="Functional">
+        <method signature="registerTest.doRegister()[pri:0, instance:Tests.registerTest@7c041b41]" name="doRegister" class="Tests.registerTest"/>
+      </group> <!-- Functional -->
+    </groups>
+    <test name="New users are able to Register" duration-ms="8992" started-at="2020-11-05T21:37:39 CST" finished-at="2020-11-05T21:37:48 CST">
+      <class name="Tests.registerTest">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.registerTest@7c041b41]" name="setUpTest" is-config="true" duration-ms="3410" started-at="2020-11-05T21:37:39 CST" description="Test Initialization" finished-at="2020-11-05T21:37:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="doRegister()[pri:0, instance:Tests.registerTest@7c041b41]" name="doRegister" duration-ms="4783" started-at="2020-11-05T21:37:42 CST" description="Register New User" finished-at="2020-11-05T21:37:47 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doRegister -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.registerTest@7c041b41]" name="tearDown" is-config="true" duration-ms="774" started-at="2020-11-05T21:37:47 CST" description="Closing Driver" finished-at="2020-11-05T21:37:48 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.registerTest -->
+    </test> <!-- New users are able to Register -->
+  </suite> <!-- Register Test Suite -->
+  <suite name="Currency Test Suite" duration-ms="32882" started-at="2020-11-05T21:37:48 CST" finished-at="2020-11-05T21:38:21 CST">
+    <groups>
+      <group name="Regression">
+        <method signature="currencyTest.currencyValidation(pojo.productData)[pri:0, instance:Tests.currencyTest@669513d8]" name="currencyValidation" class="Tests.currencyTest"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Use is able to select the Currency of item Price" duration-ms="32882" started-at="2020-11-05T21:37:48 CST" finished-at="2020-11-05T21:38:21 CST">
+      <class name="Tests.currencyTest">
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.currencyTest@669513d8]" name="setUpTest" is-config="true" duration-ms="3381" started-at="2020-11-05T21:37:48 CST" description="Test Initialization" finished-at="2020-11-05T21:37:51 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="currencyValidation(pojo.productData)[pri:0, instance:Tests.currencyTest@669513d8]" name="currencyValidation" duration-ms="11986" started-at="2020-11-05T21:37:51 CST" description="Use is able to select the Currency of item Price" data-provider="getProductsDataFromJson" finished-at="2020-11-05T21:38:03 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@984de01]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currencyValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.currencyTest@669513d8]" name="tearDown" is-config="true" duration-ms="845" started-at="2020-11-05T21:38:03 CST" description="Closing Driver" finished-at="2020-11-05T21:38:04 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpTest()[pri:0, instance:Tests.currencyTest@669513d8]" name="setUpTest" is-config="true" duration-ms="3456" started-at="2020-11-05T21:38:04 CST" description="Test Initialization" finished-at="2020-11-05T21:38:08 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="currencyValidation(pojo.productData)[pri:0, instance:Tests.currencyTest@669513d8]" name="currencyValidation" duration-ms="12363" started-at="2020-11-05T21:38:08 CST" description="Use is able to select the Currency of item Price" data-provider="getProductsDataFromJson" finished-at="2020-11-05T21:38:20 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[pojo.productData@28bd5015]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- currencyValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Tests.currencyTest@669513d8]" name="tearDown" is-config="true" duration-ms="781" started-at="2020-11-05T21:38:20 CST" description="Closing Driver" finished-at="2020-11-05T21:38:21 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Tests.currencyTest -->
+    </test> <!-- Use is able to select the Currency of item Price -->
+  </suite> <!-- Currency Test Suite -->
 </testng-results>
