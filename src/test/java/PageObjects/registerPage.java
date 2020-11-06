@@ -1,5 +1,6 @@
 package PageObjects;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -47,6 +48,7 @@ public class registerPage extends basePage {
     public WebElement SetPolicyAgreement (){
         return driver.findElement(this.policyAgreement);
     }
+    @Step("Add New User information, select Policy Agreement and Click Register")
     public void doRegister(String RegFirstName, String RegLastName, String RegEmail,
                            String RegTelephone,String RegPassword, String RegPwdConfirm){
 

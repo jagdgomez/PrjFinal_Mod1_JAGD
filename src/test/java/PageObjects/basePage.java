@@ -18,7 +18,6 @@ public class basePage {
     }
 
     //execute go to page
-
     public void goToPage() {
         this.driver.get(this.url);
     }
